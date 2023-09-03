@@ -19,7 +19,7 @@ export interface Article {
   teams: Team[];
 }
 
-export interface ArticleDetail extends Article  {
+export interface ArticleDetail extends Article {
   content?: string;
 }
 

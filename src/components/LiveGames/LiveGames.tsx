@@ -13,7 +13,9 @@ export function MatchCard(props: Match) {
         <span className="text-bold p-1 self-start rounded  border">
           {match?.sportName}
         </span>
-        <button className="ml-auto" onClick={()=>refetch()}>Refresh</button>
+        <button className="ml-auto" onClick={() => refetch()}>
+          Refresh
+        </button>
       </div>
       {match?.location}
 

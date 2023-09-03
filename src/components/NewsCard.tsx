@@ -20,7 +20,9 @@ export default function NewsCard(props: Article) {
           <time className="text-bold p-1 mt-auto self-start font-bold italic">
             {new Date(props.date).toLocaleString()}
           </time>
-          <Link to={`/articles/${props.id}`} state={props} className="ml-auto">Read more</Link>
+          <Link to={`/articles/${props.id}`} state={props} className="ml-auto">
+            Read more
+          </Link>
         </div>
       </div>
     </div>
