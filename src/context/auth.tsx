@@ -17,7 +17,6 @@ export interface AuthResponse {
 export interface IAuthContext {
   signin: (authData: AuthResponse) => void;
   signout: () => void;
-  getAuthToken: () => string | null;
   isAuthenticated: boolean;
 }
 
@@ -28,9 +27,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(!!token);
   const queryClient = useQueryClient();
 
-  const getAuthToken = () => {
-    return token;
-  };
   const signin = (authData: AuthResponse) => {
     if (!authData.auth_token) {
       throw new Error("Token not provided");
@@ -51,7 +47,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AuthContext.Provider
-      value={{ signin, signout, isAuthenticated, getAuthToken }}
+      value={{ signin, signout, isAuthenticated}}
     >
       {children}
     </AuthContext.Provider>

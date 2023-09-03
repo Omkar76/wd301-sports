@@ -43,12 +43,12 @@ export default function Articles() {
 
   return (
     <div>
-      <ul className="flex flex-wrap text-sm font-medium text-center border-gray-200">
+      <ul className="flex flex-wrap text-md font-medium text-center border-gray-200">
         <li
           onClick={() => selectSport(yourNewsSport)}
           aria-current="page"
           className={
-            "inline-block  p-4 text-blue-600  rounded-t-lg" +
+            "inline-block  p-4 text-green-600  rounded-t-lg" +
             (selectedSport?.id == yourNewsSport.id
               ? "bg-gray-100 border-t border-x rounded-t"
               : "border border-b")
@@ -62,7 +62,7 @@ export default function Articles() {
             onClick={() => selectSport(sport)}
             aria-current="page"
             className={
-              "inline-block  p-4 text-blue-600  rounded-t-lg" +
+              "inline-block  p-4 text-green-600  rounded-t-lg" +
               (selectedSport?.id == sport.id
                 ? "bg-gray-100 border-t border-x rounded-t"
                 : "border border-b")

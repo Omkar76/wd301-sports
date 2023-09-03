@@ -61,7 +61,7 @@ export function LiveGames() {
     return true;
   };
   return (
-    <div className="flex gap-2 overflow-x-scroll">
+    <div className="flex gap-2 overflow-x-scroll py-4">
       {matches
         ?.sort(sortByNewest)
         .filter(shouldDisplayMatch)

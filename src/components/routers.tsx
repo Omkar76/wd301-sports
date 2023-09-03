@@ -16,15 +16,6 @@ const router = createBrowserRouter([
         element: <Home />,
         children: [
           {
-            path: "/login",
-            element: <Login />,
-            // loader: teamLoader,
-          },
-          {
-            path: "/signup",
-            element: <Signup />,
-          },
-          {
             path: "/preferences",
             element: <Preferences />,
           },
@@ -33,6 +24,14 @@ const router = createBrowserRouter([
             element: <ArticleModal/>
           }
         ],
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
       },
     ],
   },
