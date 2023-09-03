@@ -11,8 +11,8 @@ export const PreferencesContext = createContext<IPreferenceContext | null>(
 
 const defaultPreferences: Preferences = {
   hasPreferences: false,
-  favorateSportsIds: [],
-  favorateTeamsIds: [],
+  favorateSports: [],
+  favorateTeams: [],
 };
 
 export function PreferencesProvider(props: PropsWithChildren) {
