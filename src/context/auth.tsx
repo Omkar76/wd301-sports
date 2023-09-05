@@ -41,6 +41,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const signout = () => {
     localStorage.removeItem("authToken");
     localStorage.removeItem("user");
+    queryClient.removeQueries(["preferences"]);
+
     setIsAuthenticated(false);
     setToken(null);
   };
