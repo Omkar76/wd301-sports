@@ -42,7 +42,7 @@ export default function Articles() {
   };
 
   return (
-    <div>
+    <div className="flex-1 shrink-0">
       <ul className="flex flex-wrap text-md font-medium text-center border-gray-200">
         <li
           onClick={() => selectSport(yourNewsSport)}
