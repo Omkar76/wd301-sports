@@ -26,8 +26,10 @@ export default function Articles() {
 
   const shouldShowArticle = (article: Article) => {
     if (!preferences?.hasPreferences) {
-      return (selectedSport.id == yourNewsSport.id ||
-        selectedSport.id == article.sport.id);
+      return (
+        selectedSport.id == yourNewsSport.id ||
+        selectedSport.id == article.sport.id
+      );
     }
 
     return (
@@ -60,6 +62,7 @@ export default function Articles() {
 
         {sportsList?.map((sport) => (
           <li
+            key={sport.id}
             onClick={() => selectSport(sport)}
             aria-current="page"
             className={
