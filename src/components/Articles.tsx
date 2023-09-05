@@ -26,7 +26,8 @@ export default function Articles() {
 
   const shouldShowArticle = (article: Article) => {
     if (!preferences?.hasPreferences) {
-      return true;
+      return (selectedSport.id == yourNewsSport.id ||
+        selectedSport.id == article.sport.id);
     }
 
     return (
