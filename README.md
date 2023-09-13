@@ -17,3 +17,6 @@ Sportify - A PWA to get the latest news about your favorate sports and teams!
 
 # How about a video demo? 
 https://www.loom.com/share/8081e9607ba94989800e183546896652
+
+# Try it yourself
+https://unrivaled-maamoul-88b660.netlify.app/
