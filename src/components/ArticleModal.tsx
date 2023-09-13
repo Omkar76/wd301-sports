@@ -16,7 +16,7 @@ export default function ArticleModal() {
   } = useArticle(parseInt(articleId!), placeholderArticle);
   const navigate = useNavigate();
   usePreventScroll();
-
+  console.log(article)
   if (isError) {
     return <Error />;
   }
@@ -32,7 +32,7 @@ export default function ArticleModal() {
     >
       <div className="rounded text-md relative flex flex-col bg-white max-w-lg m-auto p-5">
         <div className="flex justify-center border-b pb-2">
-          <h2 className="text-2xl font-bold">{placeholderArticle?.title}</h2>
+          <h2 className="text-2xl font-bold">{article?.title}</h2>
           <button
             className="p-2 border ml-auto border-red-500 text-red-500 rounded"
             onClick={() => navigate("/")}
