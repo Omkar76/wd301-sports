@@ -42,7 +42,7 @@ export default function Favorates() {
   };
 
   return (
-    <div className="sticky top-5 w-80 h-screen self-start ml-auto bg-gray-100 max-h-screen p-2 gap-2 pt-0 overflow-scroll">
+    <div className="sticky top-5 w-[30vw] max-w-[400px] h-screen self-start ml-auto bg-gray-100 max-h-screen p-2 gap-2 pt-0 overflow-scroll">
       <div className="flex flex-col sticky top-0 bg-inherit pb-2 mx-2">
         <h2 className="text-lg p-2 text-bold shrink-0">Favorates</h2>
         <div className="flex flex-col gap-3">

@@ -16,7 +16,6 @@ export default function ArticleModal() {
   } = useArticle(parseInt(articleId!), placeholderArticle);
   const navigate = useNavigate();
   usePreventScroll();
-  console.log(article)
   if (isError) {
     return <Error />;
   }

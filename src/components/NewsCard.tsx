@@ -16,14 +16,14 @@ export default function NewsCard(props: Article) {
         </span>
         <h3 className="text-lg font-bold">{props.title}</h3>
         <p>{props.summary}</p>
-        <div className="mt-auto flex">
-          <time className="text-bold p-1 mt-auto self-start font-bold italic">
+        {/* <div className="mt-auto flex"> */}
+          <time className="text-bold p-1 mt-auto self-start font-bold italic ">
             {new Date(props.date).toLocaleString()}
           </time>
-          <Link to={`/articles/${props.id}`} state={props} className="ml-auto">
+          <Link to={`/articles/${props.id}`} state={props} className="text-green-500 font-semibold">
             Read more
           </Link>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

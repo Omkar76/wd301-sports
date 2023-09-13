@@ -6,7 +6,7 @@ const usePreventScroll = () => {
     return () => {
       document.body.style.overflow = "auto";
     };
-  });
+  },[]);
 };
 
 export default usePreventScroll;
